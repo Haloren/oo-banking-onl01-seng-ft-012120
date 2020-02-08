@@ -18,7 +18,7 @@ class Transfer
     if @sender.status != "open" || @receiver.status != "open" || @sender.balance >= @amount #both accounts must be open, the sender balance is >= amount being sent
       @status = "rejected"
       "Transaction rejected. Please check your account balance." #spec file 
-    elsif @status = "complete" #spec file "complete" 
+    elsif @status == "complete" #spec file "complete" 
       "Complete"
     else #amount changes balance receiver & sender, change status to complete 
       @status = "complete"
