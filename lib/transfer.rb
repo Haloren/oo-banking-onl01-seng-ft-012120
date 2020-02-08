@@ -13,8 +13,11 @@ class Transfer
     @sender.valid? && @receiver.valid? 
   end   
   
-  def execute_transaction #sender=amanda receiver=avi expect(amanda.balance).to eq(950)
+  def execute_transaction #sender=amanda expect(sender.balance).to eq(950)
+    if sender.status != "open" #is account open?, is there a balance
     
+    else
+      
   end 
   
 end
