@@ -26,5 +26,5 @@ class Transfer
       @sender.balance -= @amount
     end   
   end 
-  #binding.pry 
+  
 end
