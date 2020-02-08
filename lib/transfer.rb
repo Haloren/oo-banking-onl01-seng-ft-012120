@@ -14,9 +14,9 @@ class Transfer
   end   
   
   def execute_transaction #sender=amanda expect(sender.balance).to eq(950)
-    if @sender.status != "open" || @receiver.status != "open" || @sender.balance >= @amount
-    #both accounts must be open, the sender balance is >= amount being sent
-    
+    if @sender.status != "open" || @receiver.status != "open" || @sender.balance >= @amount #both accounts must be open, the sender balance is >= amount being sent
+      @status != "pending"
+    elsif @status = 
     else
       
   end 
