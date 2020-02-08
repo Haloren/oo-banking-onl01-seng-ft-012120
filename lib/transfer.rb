@@ -17,7 +17,7 @@ class Transfer
     if @sender.status != "open" || @receiver.status != "open" || @sender.balance >= @amount #both accounts must be open, the sender balance is >= amount being sent
       @status = "not pending"
     else
-      "something"
+      @status = "complete"
     end   
   end 
   
