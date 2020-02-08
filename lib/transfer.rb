@@ -13,7 +13,7 @@ class Transfer
     @sender.valid? && @receiver.valid? 
   end   
   
-  def execute_transaction #sender=amanda receiver=avi
+  def execute_transaction #sender=amanda receiver=avi expect(amanda.balance).to eq(950)
     
   end 
   
