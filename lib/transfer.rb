@@ -18,7 +18,8 @@ class Transfer
       @status = "rejected"
       "Transaction rejected. Please check your account balance." #spec file 
     elsif @status = "complete" #spec file "complete" 
-      "Transaction complete."
+      "Complete"
+    else   
       @status = "complete"
     end   
   end 
