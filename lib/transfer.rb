@@ -18,6 +18,7 @@ class Transfer
       @status = "not pending"
     else
       "something"
+    end   
   end 
   
 end
